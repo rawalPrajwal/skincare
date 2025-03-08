@@ -1,0 +1,71 @@
+/* Assuming 1rem = 16px */
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 27rem; /* 430px -> 27rem */
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 27rem; /* 430px -> 27rem */
+  object-fit: cover;
+}
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 1.5625rem; /* 2.5rem -> 2.5rem */
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+}
+
+.right-arrow {
+  right: 1.25rem; /* 20px -> 1.25rem */
+}
+
+.left-arrow {
+  left: 1.25rem; /* 20px -> 1.25rem */
+}
+
+.right-arrow:hover,
+.left-arrow:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.slideContainer {
+  display: flex;
+  transition: transform 1s ease-out;
+}
+
+.slide {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: opacity 1s ease-out;
+}
+
+.slide.active {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideContainer {
+  display: flex;
+  transform: translateX(-6.25rem); /* -100px -> -6.25rem */
+}
+
+.slideContainer {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}

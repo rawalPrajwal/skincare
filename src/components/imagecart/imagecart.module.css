@@ -1,0 +1,17 @@
+.imageCart {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid with a minimum width of 200px for each image */
+  gap: 8px; /* Adds space between grid items */
+  justify-items: center; /* Centers the images horizontally */
+  align-items: center; /* Centers the images vertically */
+  padding: 20px; /* Optional padding for spacing */
+  margin-left: 8px;
+}
+
+.imgCart {
+  width: 100%; /* Makes the images responsive */
+  height: 175px; 
+  object-fit: contain;/* Keeps the aspect ratio */
+  border-radius: 8px; /* Optional rounded corners */
+  cursor: pointer;
+}
