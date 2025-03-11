@@ -1,7 +1,7 @@
 const HairProduct = [
   {
     id: 1,
-    img: "https://images.mamaearth.in/catalog/product/o/n/onion-hair-oil-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: "4.5 / 25",
     title: "Onion Hair Oil",
     product_volume: "150ml",
@@ -20,7 +20,7 @@ const HairProduct = [
   },
   {
     id: 3,
-    img: "https://images.mamaearth.in/catalog/product/a/r/argan-shampoo-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.8,
     title: "Argan Shampoo",
     product_volume: "250ml",
@@ -29,7 +29,7 @@ const HairProduct = [
   },
   {
     id: 4,
-    img: "https://images.mamaearth.in/catalog/product/b/r/bhringraj-hair-oil-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.6,
     title: "Bhringraj Hair Oil",
     product_volume: "200ml",
@@ -38,7 +38,7 @@ const HairProduct = [
   },
   {
     id: 5,
-    img: "https://images.mamaearth.in/catalog/product/m/i/mint-shampoo-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.4,
     title: "Tea Tree & Mint Shampoo",
     product_volume: "300ml",
@@ -47,7 +47,7 @@ const HairProduct = [
   },
   {
     id: 6,
-    img: "https://images.mamaearth.in/catalog/product/a/m/amla-hair-mask-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.7,
     title: "Amla & Bhringraj Hair Mask",
     product_volume: "200ml",
@@ -56,7 +56,7 @@ const HairProduct = [
   },
   {
     id: 7,
-    img: "https://images.mamaearth.in/catalog/product/c/o/conditioner-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.5,
     title: "Keratin Conditioner",
     product_volume: "250ml",
@@ -65,7 +65,7 @@ const HairProduct = [
   },
   {
     id: 8,
-    img: "https://images.mamaearth.in/catalog/product/h/a/hair-serum-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.9,
     title: "Hair Strengthening Serum",
     product_volume: "50ml",
@@ -74,7 +74,7 @@ const HairProduct = [
   },
   {
     id: 9,
-    img: "https://images.mamaearth.in/catalog/product/l/e/leave-in-conditioner-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.3,
     title: "Leave-In Conditioner",
     product_volume: "150ml",
@@ -83,7 +83,7 @@ const HairProduct = [
   },
   {
     id: 10,
-    img: "https://images.mamaearth.in/catalog/product/h/a/hair-growth-tonic-1.jpg?format=auto&width=400&height=400",
+    img: "https://images.mamaearth.in/catalog/product/r/i/rice-hair-mask-1.jpg?format=auto&width=400&height=400",
     rating: 4.8,
     title: "Hair Growth Tonic",
     product_volume: "100ml",

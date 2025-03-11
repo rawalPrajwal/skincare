@@ -1,18 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faShoppingBag,
-  faShoppingCart,
-  faSignInAlt,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from "react";
+import { faShoppingCart, faSignInAlt } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom"; // Uncomment this to use 'Link' component
 import styles from "./header.module.css";
 
-const Header = ({ setActive, handleActive, count }) => {
-  const [searchTerm, setSearchTerm] = useState("");
-
+const Header = ({ setActive, handleActive, count,setQuery }) => {
+   
   return (
     <header className={styles.navbar}>
       <div className={styles.main_nav_bar}>
@@ -25,14 +17,13 @@ const Header = ({ setActive, handleActive, count }) => {
         </Link>
 
         {/* Search Bar */}
+        {/* You can either remove this if not using search functionality or keep it for future */}
         <div className={styles.search_bar}>
           <span className="material-symbols-outlined">search</span>
           <input
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
             type="text"
             placeholder="Search for Product"
-            className={styles.searchInput}
+            className={styles.searchInput}  onChange={(e)=> setQuery(e.target.value.toLowerCase())}
           />
         </div>
 
@@ -40,8 +31,8 @@ const Header = ({ setActive, handleActive, count }) => {
         <div className={styles.right}>
           <Link to="/cart" className={styles.icon}>
             <FontAwesomeIcon icon={faShoppingCart} />
-            <span>Cart</span>
-            <span>{count}</span>
+            {/* <span>Cart</span> */}
+            <span className={styles.badge}>{count}</span>
           </Link>
           <Link to={"/login"} className={styles.icon}>
             <FontAwesomeIcon icon={faSignInAlt} />

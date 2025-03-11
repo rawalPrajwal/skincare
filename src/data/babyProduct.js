@@ -1,7 +1,7 @@
 const BabyProducts = [
   {
     id: 1,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Cream",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.7 / 30",
     title: "Baby Cream",
     product_volume: "100ml",
@@ -10,7 +10,7 @@ const BabyProducts = [
   },
   {
     id: 2,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Massage+Oil",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.6 / 20",
     title: "Baby Massage Oil",
     product_volume: "200ml",
@@ -19,7 +19,7 @@ const BabyProducts = [
   },
   {
     id: 3,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Shampoo",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.8 / 35",
     title: "Baby Shampoo",
     product_volume: "150ml",
@@ -28,7 +28,7 @@ const BabyProducts = [
   },
   {
     id: 4,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Lotion",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.9 / 40",
     title: "Baby Lotion",
     product_volume: "200ml",
@@ -37,7 +37,7 @@ const BabyProducts = [
   },
   {
     id: 5,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Wipes",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.5 / 15",
     title: "Baby Wipes",
     product_volume: "80 wipes",
@@ -46,7 +46,7 @@ const BabyProducts = [
   },
   {
     id: 6,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Butter",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.8 / 28",
     title: "Baby Butter",
     product_volume: "150ml",
@@ -56,7 +56,7 @@ const BabyProducts = [
   },
   {
     id: 7,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Bath+Foam",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.7 / 22",
     title: "Baby Bath Foam",
     product_volume: "200ml",
@@ -65,7 +65,7 @@ const BabyProducts = [
   },
   {
     id: 8,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Face+Cream",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.6 / 18",
     title: "Baby Face Cream",
     product_volume: "50ml",
@@ -74,7 +74,7 @@ const BabyProducts = [
   },
   {
     id: 9,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Nappy+Cream",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.9 / 45",
     title: "Baby Nappy Cream",
     product_volume: "75ml",
@@ -84,7 +84,7 @@ const BabyProducts = [
   },
   {
     id: 10,
-    img: "https://via.placeholder.com/400x400.png?text=Baby+Sunscreen",
+    img: "https://images.mamaearth.in/catalog/product/1/_/1_99.jpg?format=auto&width=400&height=400",
     rating: "4.8 / 38",
     title: "Baby Sunscreen",
     product_volume: "100ml",

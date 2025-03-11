@@ -1,50 +1,53 @@
+/* PRODUCT CONTAINER */
 .productContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr)); /* 250px -> 15.625rem */
-    gap: 1.25rem; /* 20px -> 1.25rem */
+    grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr)); /* 250px */
+    gap: 1.25rem; /* 20px */
     justify-content: center;
     align-items: stretch;
-    padding: 1.25rem; /* 20px -> 1.25rem */
+    padding: 1.25rem; /* 20px */
     background-color: #f5f5f5;
 }
 
+/* PRODUCT CARD */
 .productCard {
-    padding: 1.25rem; /* 20px -> 1.25rem */
-    border-radius: 0.75rem; /* 12px -> 0.75rem */
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 4px -> 0.25rem, 12px -> 0.75rem */
-    justify-content: center;
+    padding: 1.25rem; /* 20px */
+    border-radius: 0.75rem; /* 12px */
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1); /* 4px 12px */
     text-align: center;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 0.0625rem solid #e0e0e0; /* 1px -> 0.0625rem */
+    border: 0.0625rem solid #e0e0e0; /* 1px */
 }
 
 .productCard:hover {
-    transform: translateY(-0.3125rem); /* -5px -> -0.3125rem */
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 8px -> 0.5rem, 16px -> 1rem */
+    transform: translateY(-0.3125rem); /* -5px */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 8px 16px */
 }
 
+/* PRODUCT IMAGE */
 .productImg {
     width: 100%;
-    height: 11.25rem; /* 180px -> 11.25rem */
+    height: 11.25rem; /* 180px */
     object-fit: cover;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    margin-bottom: 0.9375rem; /* 15px -> 0.9375rem */
+    border-radius: 0.5rem; /* 8px */
+    margin-bottom: 0.9375rem; /* 15px */
 }
 
+/* PRODUCT DETAILS */
 .rating {
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    font-size: 0.875rem; /* 14px */
     color: #f39c12;
-    margin-top: 0.3125rem; /* 5px -> 0.3125rem */
+    margin-top: 0.3125rem; /* 5px */
 }
 
 .productTitle {
-    font-size: 1.125rem; /* 18px -> 1.125rem */
+    font-size: 1.125rem; /* 18px */
     font-weight: 600;
-    margin: 0.625rem 0; /* 10px -> 0.625rem */
+    margin: 0.625rem 0; /* 10px */
     color: #333333;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -55,24 +58,25 @@
 
 .productVolume {
     display: block;
-    font-size: 0.875rem; /* 14px -> 0.875rem */
+    font-size: 0.875rem; /* 14px */
     color: #777777;
-    margin: 0.3125rem 0; /* 5px -> 0.3125rem */
+    margin: 0.3125rem 0; /* 5px */
 }
 
 .productPrice {
     display: block;
-    font-size: 1.125rem; /* 18px -> 1.125rem */
+    font-size: 1.125rem; /* 18px */
     font-weight: 700;
     color: #27ae60;
-    margin: 0.625rem 0; /* 10px -> 0.625rem */
+    margin: 0.625rem 0; /* 10px */
 }
 
+/* ADD TO CART BUTTON */
 .cartBtn {
     width: 100%;
-    padding: 0.625rem 1.25rem; /* 10px -> 0.625rem, 20px -> 1.25rem */
+    padding: 0.625rem 1.25rem; /* 10px 20px */
     border: none;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
+    border-radius: 0.5rem; /* 8px */
     background-color: #3498db;
     color: white;
     font-weight: 600;
@@ -81,5 +85,54 @@
 }
 
 .cartBtn:hover {
-    background-color: #2980b9; /* Darker blue on hover */
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* NOTIFICATION STYLING */
+.notification {
+    position: fixed;
+    top: 3.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: black;
+    padding: 0.75rem 1.25rem; /* Reduced padding */
+    border-radius: 0.5rem;
+    font-size: 0.875rem; /* Slightly smaller font */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* Reduced gap */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #27ae60; /* Green success border */
+    animation: fadeInOut 3s ease-in-out;
+    z-index: 1000;
+}
+
+/* SUCCESS ICON */
+.notification::before {
+    content: "✔"; /* Checkmark */
+    font-size: 1rem; /* Reduced icon size */
+    color: #27ae60;
+}
+
+/* NOTIFICATION ANIMATION */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translate(-50%, 10px); }
+    10% { opacity: 1; transform: translate(-50%, 0); }
+    90% { opacity: 1; transform: translate(-50%, 0); }
+    100% { opacity: 0; transform: translate(-50%, 10px); }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .productContainer {
+        grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr)); /* 200px */
+    }
+
+    .notification {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0.75rem 1.25rem;
+    }
 }

@@ -1,4 +1,3 @@
-// src/data/imagecartdata.js
 
 export const imageCartData = [
   {

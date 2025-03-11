@@ -18,9 +18,7 @@ const Cart = ({ cartAllProduct, setCartAllProduct, setCount }) => {
       ) : (
         <div className={styles.cartItems}>
           {cartAllProduct.map((product) => (
-            
             <div key={product.id} className={styles.cartItem}>
-              <h2>Product</h2>
               <img
                 src={product.img}
                 alt={product.title}
@@ -28,8 +26,12 @@ const Cart = ({ cartAllProduct, setCartAllProduct, setCount }) => {
               />
               <div className={styles.cartDetails}>
                 <h3 className={styles.productTitle}>{product.title}</h3>
-                <p className={styles.productPrice}>{product.rating}</p>
                 <p className={styles.productPrice}>{product.price}</p>
+                <div className="countHandler">
+                  <button>-</button>
+                   <input/>
+                  <button>+</button>
+                </div>
                 <button
                   className={styles.removeBtn}
                   onClick={() => removeFromCart(product.id)}

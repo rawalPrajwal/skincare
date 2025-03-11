@@ -6,7 +6,7 @@ import SliderData from "../data/sliderData";
 import Card from "./displayCard/card";
 // import CardOne from "./CardOne";
 
-const Home = ({ setProductId, active, count, setCount }) => {
+const Home = ({ setProductId, active, count, setCount,query }) => {
   // const [active, setActive] = useState("skin");
 
   // const handleActive = (active) => {
@@ -33,6 +33,7 @@ const Home = ({ setProductId, active, count, setCount }) => {
         setProductId={setProductId}
         count={count}
         setCount={setCount}
+        query={query}
       />
 
       {/* <CardOne active={active} /> */}

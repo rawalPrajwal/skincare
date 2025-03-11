@@ -4,7 +4,7 @@ import Header from "./components/header/header-section";
 import Cart from "./components/cart/cart";
 import { useEffect, useState } from "react";
 import { AuthRoutes } from "../../modules/auth/utils/route";
-import ProductList from "./data/data";
+import ProductList from "./data/skinProduct";
 import ImageSlider from "./components/imgslider/imageSlider";
 import ImageCart from "./components/imagecart/imagecart";
 import Login from "../../modules/auth/login";
@@ -30,6 +30,7 @@ function App() {
     setActive(active);
   };
   const [count, setCount] = useState(0);
+  const [query, setQuery] = useState("");
 
   return (
     <>
@@ -37,7 +38,8 @@ function App() {
         <Header
           setActive={setActive}
           handleActive={handleActive}
-          count={count}
+          count={count} 
+          setQuery={setQuery}
         />
         <Routes>
           <Route
@@ -48,6 +50,7 @@ function App() {
                 active={active}
                 count={count}
                 setCount={setCount}
+                query={query}
               />
             }
           />
@@ -59,7 +62,7 @@ function App() {
               <Cart
                 cartAllProduct={cartAllProduct}
                 setCartAllProduct={setCartAllProduct}
-                setCount={setCount}
+                setCount={setCount} 
               />
             }
           />
